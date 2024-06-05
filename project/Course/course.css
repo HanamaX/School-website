@@ -1,0 +1,270 @@
+@font-face {
+  font-family: harmond;
+  src: url("/servers/project/Menu\ Page/harmond-sembditacond.otf");
+}
+body {
+  margin: 0;
+  background-image: url("/servers/project/world.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: rgb(70, 65, 60);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 30px;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+li a.active {
+  background-color: #455496;
+  color: rgb(214, 115, 115);
+}
+
+li a:hover:not(.active) {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(240, 210, 215);
+  color: rgb(75, 60, 60);
+}
+
+li a:hover:not(.active) {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(240, 210, 215);
+  color: white;
+}
+
+
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+a img {
+  position:absolute;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  a img {
+    position:relative;
+    width: 15px;
+    height: 15px;
+  }
+  
+  div.content {margin-left: 0px;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+  div.content {margin-left: 0px;}
+
+  a img {
+    position: absolute;
+    border-radius: 8px;
+  }
+}
+
+h1{
+  font-family: harmond,sans-serif;
+  font-size: 70px;
+  color: yellowgreen;
+
+}
+
+p{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+  background-color: transparent;
+  color: rgb(218, 9, 9);
+  font-weight: bold;
+  outline: none;
+  border-style: none;
+  padding: 3px;
+  margin-bottom: -10px;
+  width: auto;
+
+}
+.sign ::placeholder{
+  color: antiquewhite;
+}
+select{
+  width: 30%;
+  background-color: transparent;
+  color: rgb(171, 187, 82);
+  font-weight: bold;
+  outline: none;
+  border-style: none;
+}
+
+ textarea{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border-style: none;
+  width: 100%;
+ }
+
+.sign label{
+  color: white;
+}
+
+table{
+  border-color:rgb(8, 8, 8);
+  color: white;
+  border-style:ridge;
+  text-align: left;
+}
+
+td{
+  border-left-color: transparent;
+  border-right-color:transparent ;
+}
+
+
+
+.sign .sin {
+  visibility: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url("/servers/project/world.jpg");
+  background-position: center;
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  padding: 80px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 0px;
+  border-color: rgb(84, 192, 169);
+  border-style: inset;
+  border-collapse: collapse;
+}
+
+.sign {
+  display: inline-block;
+  user-select: none;
+ }
+
+ .sign .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+.sig {
+  position: fixed;
+  width: 250px;
+  height: 60px;
+  background-color: burlywood;
+  bottom: 0;
+  right: 0;
+  border-radius:8px ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 26px;
+}
+
+.sub {
+  width: 400px;
+  height: 50px;
+  background-color: rgb(152, 170, 152);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 26px;
+  margin-left: 0px;
+  border-radius:8px ;
+}
+
+.res {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(194, 163, 163);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 26px;
+  margin-left: 0px;
+  border-radius:8px ;
+}
+
+.cancel {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  border-radius: 8px;
+}
+
+input{
+  margin: 3px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.dp {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(0px);
+  border-radius: 10px;
+  padding-right: 3px;
+  background-color: rgb(209, 159, 167);
+}
+
+ .hdp{
+  display: none;
+}
+.hhdp{
+  display: flex;
+  flex-direction: column;
+}
+
+ .ddp{
+  display: flex;
+  flex-direction: row;
+} 
+
+
+.hdp p{
+ margin-bottom: -2px;
+ margin-top: 2px;
+}
+

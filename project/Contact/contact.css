@@ -1,0 +1,141 @@
+@font-face {
+  font-family: harmond;
+  src: url("/servers/project/Menu\ Page/harmond-sembditacond.otf");
+}
+body {
+  margin: 0;
+  background-image: url("/servers/project/world.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px 30px;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+li a.active {
+  background-color: #455496;
+  color: rgb(214, 115, 115);
+}
+
+li a:hover:not(.active) {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(240, 210, 215);
+  color: rgb(75, 60, 60);
+}
+
+li a:hover:not(.active) {
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(240, 210, 215);
+  color: white;
+}
+
+
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 100%;
+  background-image: url(/servers/project/background/R.jpeg);
+}
+
+a img {
+  position: absolute;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  a img {
+    position:relative;
+    width: 15px;
+    height: 15px;
+  }
+  
+  div.content {margin-left: 0px;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+  div.content {margin-left: 0px;}
+
+  a img {
+    position: absolute;
+    border-radius: 8px;
+  }
+}
+
+h1{
+  font-family: harmond,sans-serif;
+  font-size: 70px;
+  color: yellowgreen;
+
+}
+
+
+.dp {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(0px);
+  border-radius: 10px;
+  padding-right: 3px;
+  background-color: rgb(209, 159, 167);
+}
+
+ .hdp{
+  display: none;
+}
+.hhdp{
+  display: flex;
+  flex-direction: column;
+}
+
+ .ddp{
+  display: flex;
+  flex-direction: row;
+} 
+
+
+.hdp p{
+ margin-bottom: -2px;
+ margin-top: 2px;
+}
+
